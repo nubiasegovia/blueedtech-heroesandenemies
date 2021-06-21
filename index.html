@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de dano - Resident Evil RPG</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class=container-titulo>
+      <p>Calculadora de Dano</p>
+    </div>
+
+    <div class="personagens">
+        <h1>Selecione o personagem</h1>
+    
+        <div class="img-slider">
+            <div class="slide active">
+            <img src="img/chris1.png" alt="">
+            <div class="info">
+                <h2>Chris Redfield</h2>
+            </div>
+            </div>
+            <div class="slide">
+            <img src="img/claire1.png" alt="">
+            <div class="info">
+                <h2>Claire Redfield</h2>
+            </div>
+            </div>
+            <div class="slide">
+            <img src="img/jill1.png" alt="">
+            <div class="info">
+                <h2>Jill Valentine</h2>
+            </div>
+            </div>
+            <div class="slide">
+            <img src="img/leon.png" alt="">
+            <div class="info">
+                <h2>Leon S. Kennedy</h2>
+            </div>
+            </div>
+            
+            <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="inimigos">
+        <h1>Selecione o inimigo</h1>
+    
+        <section>
+        
+            <div class="flex-container">
+                <div class="wrapper">
+                    <div class="card front-face" id="cerberus">
+                        <img src="img/cerberus1.png" alt="">
+                        <h1>Cerberus</h1>
+                    </div>
+                    <div class="card back-face" id="cerberus">
+                        <div class="infos-inimigo">
+                            <h1>Cerberus</h1>
+                            <p>Tipo: cachorro <br>
+                                Criado via: contaminação T-Virus<br>
+                                Ataques: mordida<br>
+                                Nível de inteligência: baixo
+                            </p>
+                        </div>
+                </div>            
+            </div>
+
+            <div class="flex-container">
+                <div class="wrapper">
+                    <div class="card front-face" id="licker">
+                        <img src="img/licker1.png" alt="">
+                        <h1>Licker β</h1>
+                    </div>
+                    <div class="card back-face" id="licker">
+                        <div class="infos-inimigo">
+                            <h1>Licker β</h1>
+                            <p>Tipo: - <br>
+                                Criado via: -<br>
+                                Ataques: -<br>
+                                Nível de inteligência: -
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="wrapper">
+                    <div class="card front-face" id="zumbi">
+                        <img src="img/zumbi1.png" alt="">
+                        <h1>Zumbi</h1>
+                    </div>
+                    <div class="card back-face" id="zumbi">
+                        <div class="infos-inimigo">
+                            <h1>Zumbi</h1>
+                            <p>Tipo: - <br>
+                                Criado via: -<br>
+                                Ataques: -<br>
+                                Nível de inteligência: -
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+            <div class="flex-container">
+                <div class="wrapper">
+                    <div class="card front-face" id="nemesis">
+                        <img src="img/nemesis1.png" alt="">
+                        <h1>Nemesis T-Type</h1>
+                    </div>
+                    <div class="card back-face" id="nemesis">
+                        <div class="infos-inimigo">
+                            <h1>Nemesis T-Type</h1>
+                            <p>Tipo: - <br>
+                                Criado via: -<br>
+                                Ataques: -<br>
+                                Nível de inteligência: -
+                            </p>
+                        </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    
+    <div class="linha-container">
+        <button id="calcular" type="button">Calcular Dano</button>
+    </div>
+
+    <div class="linha-container">
+        <span id="dano"></span>
+    </div>
+    
+<script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
+      
