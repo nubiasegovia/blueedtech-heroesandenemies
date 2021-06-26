@@ -37,7 +37,36 @@ btns[manual].classList.add('active');
     });
     
 const personagemPrincipal=document.querySelector('.active h2').innerHTML
-const personagemInimigo=document.querySelectorAll('.card h1').innerHTML
-console.log(personagemPrincipal)
-console.log(personagemInimigo)
-    
+const inimigos = document.querySelectorAll('.inimigos')
+const texto = document.querySelector('#texto')
+const botao = document.querySelector('#calcular')
+console.log(botao)
+
+// selecionando o inimigo
+//const selecionado = document.querySelectorAll('[data="inimigo-ativo"]')
+for (const inimigo of inimigos) {
+    inimigo.addEventListener('click',function(){
+        if (this.hasAttribute('data')) {
+            this.removeAttribute('data')
+        } else {
+            this.setAttribute('data', 'inimigo-ativo')
+        }
+    })
+}
+
+
+botao.addEventListener('click', function(){
+    const inimigoSelecionado = document.querySelector('.inimigos[data="inimigo-ativo"] h1').innerHTML
+    console.log(personagensInimigos, inimigoSelecionado)
+    if (document.querySelectorAll('[data="inimigo-ativo"]').length > 1){
+        texto.innerHTML = 'MUITOS INIMIGOS SELECIONADOS, DESMARQUE.'
+    }else {
+        const dano = personagensInimigos[inimigoSelecionado] - personagensPrincipais[personagemPrincipal]
+        console.log(dano)
+        if ( dano > 0){
+            texto.innerHTML = 'Não matou, tente novamente.'
+        }else{
+            texto.innerHTML = ' Você venceu.'
+        }
+    }
+})
