@@ -5,51 +5,51 @@ app = Flask(__name__)
 
 def home():
 
-    personagens = [
+    p_principais = [
         {
             'nome': 'Chris Redfield',
-            'ataque': 20
+            'img': 'chris1'
         },
         {
             'nome': 'Claire Redfield',
-            'ataque': 30
+            'img': 'claire1'
         },
         {
             'nome': 'Jill Valentine',
-            'ataque': 30
+            'img': 'jill1'
         },
         {
             'nome': 'Leon S. Kennedy',
-            'ataque': '20'
+            'img': 'leon'
         }
     ]
 
     inimigos = [
         {
             'nome': 'Cerberus',
-            'total_vida': 15
+            'img': 'cerberus1'
         },
         {
-            'nome': 'Licker β',
-            'total_vida': 20
+            'nome': 'Licker',
+            'img': 'licker1'
         },
         {
             'nome': 'Zumbi',
-            'total_vida': 20
+            'img': 'zumbi1'
         },
         {
             'nome': 'Nemesis T-Type',
-            'total_vida': 30
+            'img': 'nemesis1'
         }
     ]
 
-    caminho_base_imagem = '/static/img/'
+    caminho_imagem = '/static/img/'
     
     return render_template(
-        "index.html",
-        personagens=personagens,
-        inimigos=inimigos,
-        caminho_base_imagem=caminho_base_imagem
+        'index.html',
+        p_principais = p_principais,
+        inimigos = inimigos,
+        caminho_imagem = caminho_imagem
     )
 
 if __name__=="__main__":

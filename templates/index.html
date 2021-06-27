@@ -17,27 +17,27 @@
     
         <div class="img-slider">
             <div class="slide active">
-            <img src="/static/img/chris1.png" alt="">
+            <img src="{{caminho_imagem}}/{{p_principais[0]['img']}}.png" alt="">
             <div class="info">
-                <h2>Chris Redfield</h2>
+                <h2>{{ p_principais[0]['nome'] }}</h2>
             </div>
             </div>
             <div class="slide">
-            <img src="/static/img/claire1.png" alt="">
+            <img src="{{caminho_imagem}}/{{p_principais[1]['img']}}.png" alt="">
             <div class="info">
-                <h2>Claire Redfield</h2>
+                <h2>{{ p_principais[1]['nome'] }}</h2>
             </div>
             </div>
             <div class="slide">
-            <img src="/static/img/jill1.png" alt="">
+            <img src="{{caminho_imagem}}/{{p_principais[2]['img']}}.png" alt="">
             <div class="info">
-                <h2>Jill Valentine</h2>
+                <h2>{{ p_principais[2]['nome'] }}</h2>
             </div>
             </div>
             <div class="slide">
-            <img src="/static/img/leon.png" alt="">
+            <img src="{{caminho_imagem}}/{{p_principais[3]['img']}}.png" alt="">
             <div class="info">
-                <h2>Leon S. Kennedy</h2>
+                <h2>{{ p_principais[3]['nome'] }}</h2>
             </div>
             </div>
             
@@ -58,26 +58,26 @@
             <div class="flex-container">
                 <div class="wrapper inimigos">
                     <div class="card front-face" id="cerberus">
-                        <img src="/static/img/cerberus1.png" alt="">
-                        <h1>Cerberus</h1>
+                        <img src="{{caminho_imagem}}/{{inimigos[0]['img']}}.png" alt="">
+                        <h1>{{ inimigos[0]['nome'] }}</h1>
                     </div>
                 </div>      
                 <div class="wrapper inimigos">
                     <div class="card front-face" id="licker">
-                        <img src="/static/img/licker1.png" alt="">
-                        <h1>Licker β</h1>
+                        <img src="{{caminho_imagem}}/{{inimigos[1]['img']}}.png" alt="">
+                        <h1>{{ inimigos[1]['nome'] }}</h1>
                     </div>
                 </div>
                 <div class="wrapper inimigos">
                     <div class="card front-face" id="zumbi">
-                        <img src="/static/img/zumbi1.png" alt="">
-                        <h1>Zumbi</h1>
+                        <img src="{{caminho_imagem}}/{{inimigos[2]['img']}}.png" alt="">
+                        <h1>{{ inimigos[2]['nome'] }}</h1>
                     </div>
                 </div>
                 <div class="wrapper inimigos">
                     <div class="card front-face" id="nemesis">
-                        <img src="/static/img/nemesis1.png" alt="">
-                        <h1>Nemesis T-Type</h1>
+                        <img src="{{caminho_imagem}}/{{inimigos[3]['img']}}.png" alt="">
+                        <h1>{{ inimigos[3]['nome'] }}</h1>
                     </div>
                 </div>
             </div>
