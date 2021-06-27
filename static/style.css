@@ -76,6 +76,8 @@ section {
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
+  border: 5px rgb(253, 18, 18) solid;
+  border-radius: 10px;
 }
 
 .img-slider .slide img{
@@ -295,7 +297,8 @@ button {
 }
 
 .inimigos[data='inimigo-ativo'] {
-  border: 2px purple solid;
+  border: 5px rgb(253, 18, 18) solid;
+  border-radius: 10px;
 }
 
 .linha-container:last-child {

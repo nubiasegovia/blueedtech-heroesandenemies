@@ -36,14 +36,12 @@ btns[manual].classList.add('active');
         });
     });
     
-const personagemPrincipal=document.querySelector('.active h2').innerHTML
+
 const inimigos = document.querySelectorAll('.inimigos')
 const texto = document.querySelector('#texto')
 const botao = document.querySelector('#calcular')
 console.log(botao)
 
-// selecionando o inimigo
-//const selecionado = document.querySelectorAll('[data="inimigo-ativo"]')
 for (const inimigo of inimigos) {
     inimigo.addEventListener('click',function(){
         if (this.hasAttribute('data')) {
@@ -57,6 +55,7 @@ for (const inimigo of inimigos) {
 
 botao.addEventListener('click', function(){
     const inimigoSelecionado = document.querySelector('.inimigos[data="inimigo-ativo"] h1').innerHTML
+    const personagemPrincipal=document.querySelector('.active h2').innerHTML
     console.log(personagensInimigos, inimigoSelecionado)
     if (document.querySelectorAll('[data="inimigo-ativo"]').length > 1){
         texto.innerHTML = 'MUITOS INIMIGOS SELECIONADOS, DESMARQUE.'
